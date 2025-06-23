@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-design, header .small-nav .content ul li a, header .small-nav .content .toggle-menu, header .small-nav .content .country h6 {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  font-size: 13.6px;
+  cursor: pointer;
+  color: #5b5d61;
+}
+.link-design:hover, header .small-nav .content ul li a:hover, header .small-nav .content .toggle-menu:hover, header .small-nav .content .country h6:hover {
+  color: #c96;
+}
+
+.drop-icon {
+  font-size: 12px;
+}
+
+header .small-nav .content {
+  position: relative;
+}
+header .small-nav .content::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+header .small-nav .content .country h6 {
+  padding-left: 1.5rem;
+  position: relative;
+}
+@media (max-width: 767px) {
+  header .small-nav .content .country h6 {
+    padding-left: 0.5rem;
+  }
+}
+header .small-nav .content .country h6 ul {
+  display: none;
+}
+header .small-nav .content .toggle-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1.5rem;
+}
+@media (min-width: 992px) {
+  header .small-nav .content .toggle-menu {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  header .small-nav .content .toggle-menu:hover + ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 1rem 0.5rem;
+  }
+  header .small-nav .content .toggle-menu:hover + ul li {
+    margin: 0.5rem 0;
+  }
+}
+header .small-nav .content ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  header .small-nav .content ul {
+    display: none;
+  }
+}
+header .small-nav .content ul li a {
+  padding-right: 1.5rem;
+}/*# sourceMappingURL=style.css.map */

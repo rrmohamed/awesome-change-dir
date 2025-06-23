@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="images/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task</title>
+  <!-- font awesome css file -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- bootstrap css file -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css file -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <!-- start header -->
+<header>
+
+  <!-- start small nav -->
+  <section class="small-nav py-2 ">
+    <div class="container-xxl ">
+      <div class=" content d-flex justify-content-between align-items-center">
+        <div class=" country w-25 d-flex justify-content-start align-items-center ">
+          <select>
+            <option value="">Usd</option>
+            <option value="">Eur</option>
+            <option value="">Asd</option>
+          </select>
+        <select id="lang" >
+          <option value="en"> En </option>
+          <option value="ar"> Ar </option>
+        </select>
+        </div>
+        <a class=" toggle-menu text-decoration-none " href="#"> 
+          <span class="px-3" data-i18n="links">Links</span> 
+          <i class="fa-solid fa-angle-down text-black-50"></i> 
+        </a>
+  
+          <ul class="right-small-menu ">
+            <li>
+              <a class="text-decoration-none text-uppercase" href="" data-i18n="call" ><i class="fa-solid fa-phone"></i> call+0111 028 9397 </a>
+            </li>
+            <li>
+              <a class="text-decoration-none text-uppercase" href="" data-i18n="wishlist" ><i class="fa-regular fa-heart"></i> My Wishlist(3) </a>
+            </li>
+            <li>
+              <a class="text-decoration-none text-uppercase" href="" data-i18n="about" > About Us</a>
+            </li>
+            <li>
+              <a class="text-decoration-none text-uppercase" href="" data-i18n="contact" > Contact Us</a>
+            </li>
+            <li>
+              <a class="text-decoration-none text-uppercase" href="" data-i18n="login" ><i class="fa-regular fa-user"></i> Login </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </section>
+  <!-- end small nav -->
+
+  <!-- start main nav -->
+  <section class="main-nav my-4">
+    <nav class="navbar navbar-expand-lg">
+    <div class="container-xxl">
+      <div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="images/logo.png" class="navbar-brand" alt="">
+      </div>
+          <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" >
+            <div class="offcanvas-header me-auto">
+              <i class="fa-solid fa-xmark close" data-bs-dismiss="offcanvas" ></i>
+            </div>
+            <div class=" form my-4 " role="search">
+              <input class="input-search ms-2" type="search" aria-label="Search"/>
+              <button class=" "><i class="fa-solid fa-magnifying-glass icon"></i></button>
+            </div>
+            <ul class="navbar-nav ms-auto ms-lg-0 mb-2 mb-lg-0 ">
+              <li class="nav-item ">
+                <a class="nav-link active text-uppercase " href="#"><span data-i18n="home">Home</span> <i class="fa-solid fa-angle-down  drop-icon "></i> </a>
+                <div class=" mega-menu ">
+                  <div class="mega-menu-left w-75 py-2 px-4 d-flex justify-content-between align-items-center">
+                    <div class="half1">
+
+                      <h6 class="text-uppercase" data-i18n="withSidebar" > shop with sidebar </h6>
+                      <ul>
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List</a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="twoColoumn"> Shop Grid 2 Coloumn </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="threeColoumn"> Shop Grid 3 Coloumn </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="fourColoumn"> Shop Grid 4 Coloumn</a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List </a></li>
+                      </ul>
+                      <h6 class="mt-3" data-i18n="noSidebar">shop no sidebar</h6>
+                      <ul >
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List </a></li>
+                      </ul>
+                      
+                    </div>
+                    <div class="half2">
+
+                    <h6 class="text-uppercase" data-i18n="noSidebar"> shop no sidebar </h6>
+
+                      <ul >
+                        <li><a class="text-decoration-none" href="#" data-i18n="boxed"> Shop Boxed No Sidebar </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="boxed"> Shop Boxed No Sidebar </a></li>
+                      </ul>
+                      <h6 class="mt-3"> Shop Pages </h6>
+                      <ul class="hide-small">
+                        <li><a class="text-decoration-none" href="#" data-i18n="cart"> Cart </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="checkout"> Checkout </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="wishList"> WishList </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="myAccount"> My Account </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="lookbook"> Lookbook </a></li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <div class="mega-menu-right">
+
+                    <div class="half3 ">
+                      <img src="images/banner-1 (1).jpg" class="img-fluid" alt="">
+                      <div></div>
+                    </div>
+                    <div class="half4 position-absolute">
+                      <h4 data-i18n="last">Last <br>
+                        <span data-i18n="chance">Chance</span>
+                      </h4>
+                      <h2 data-i18n="sale">Sale</h2>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item " >
+                <a class="nav-link text-uppercase" href="#"> <span data-i18n="shop"> Shop </span> <i class="fa-solid fa-angle-down drop-icon"></i> </a>
+                <div class=" mega-menu ">
+                  <div class="mega-menu-left w-75 py-2 px-4 d-flex justify-content-between align-items-center">
+                    <div class="half1">
+
+                      <h6 class="text-uppercase" data-i18n="withSidebar" > shop with sidebar </h6>
+                      <ul>
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List</a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="twoColoumn"> Shop Grid 2 Coloumn </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="threeColoumn"> Shop Grid 3 Coloumn </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="fourColoumn"> Shop Grid 4 Coloumn</a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List </a></li>
+                      </ul>
+                      <h6 class="mt-3" data-i18n="noSidebar">shop no sidebar</h6>
+                      <ul >
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List </a></li>
+                      </ul>
+                      
+                    </div>
+                    <div class="half2">
+
+                    <h6 class="text-uppercase" data-i18n="noSidebar"> shop no sidebar </h6>
+
+                      <ul >
+                        <li><a class="text-decoration-none" href="#" data-i18n="boxed"> Shop Boxed No Sidebar </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="boxed"> Shop Boxed No Sidebar </a></li>
+                      </ul>
+                      <h6 class="mt-3"> Shop Pages </h6>
+                      <ul class="hide-small">
+                        <li><a class="text-decoration-none" href="#" data-i18n="cart"> Cart </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="checkout"> Checkout </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="wishList"> WishList </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="myAccount"> My Account </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="lookbook"> Lookbook </a></li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <div class="mega-menu-right">
+
+                    <div class="half3 ">
+                      <img src="images/banner-1 (1).jpg" class="img-fluid" alt="">
+                      <div></div>
+                    </div>
+                    <div class="half4 position-absolute">
+                      <h4 data-i18n="last">Last <br>
+                        <span data-i18n="chance">Chance</span>
+                      </h4>
+                      <h2 data-i18n="sale">Sale</h2>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#"> <span data-i18n="products">Products</span> <i class="fa-solid fa-angle-down  drop-icon"></i> </a>
+                <div class=" mega-menu ">
+                  <div class="mega-menu-left w-75 py-2 px-4 d-flex justify-content-between align-items-center">
+                    <div class="half1">
+
+                      <h6 class="text-uppercase" data-i18n="withSidebar" > shop with sidebar </h6>
+                      <ul>
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List</a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="twoColoumn"> Shop Grid 2 Coloumn </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="threeColoumn"> Shop Grid 3 Coloumn </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="fourColoumn"> Shop Grid 4 Coloumn</a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List </a></li>
+                      </ul>
+                      <h6 class="mt-3" data-i18n="noSidebar">shop no sidebar</h6>
+                      <ul >
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List </a></li>
+                      </ul>
+                      
+                    </div>
+                    <div class="half2">
+
+                    <h6 class="text-uppercase" data-i18n="noSidebar"> shop no sidebar </h6>
+
+                      <ul >
+                        <li><a class="text-decoration-none" href="#" data-i18n="boxed"> Shop Boxed No Sidebar </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="boxed"> Shop Boxed No Sidebar </a></li>
+                      </ul>
+                      <h6 class="mt-3"> Shop Pages </h6>
+                      <ul class="hide-small">
+                        <li><a class="text-decoration-none" href="#" data-i18n="cart"> Cart </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="checkout"> Checkout </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="wishList"> WishList </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="myAccount"> My Account </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="lookbook"> Lookbook </a></li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <div class="mega-menu-right">
+
+                    <div class="half3 ">
+                      <img src="images/banner-1 (1).jpg" class="img-fluid" alt="">
+                      <div></div>
+                    </div>
+                    <div class="half4 position-absolute">
+                      <h4 data-i18n="last">Last <br>
+                        <span data-i18n="chance">Chance</span>
+                      </h4>
+                      <h2 data-i18n="sale">Sale</h2>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#"> <span data-i18n="pages">Pages</span> <i class="fa-solid fa-angle-down  drop-icon"></i> </a>
+                <div class=" mega-menu ">
+                  <div class="mega-menu-left w-75 py-2 px-4 d-flex justify-content-between align-items-center">
+                    <div class="half1">
+
+                      <h6 class="text-uppercase" data-i18n="withSidebar" > shop with sidebar </h6>
+                      <ul>
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List</a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="twoColoumn"> Shop Grid 2 Coloumn </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="threeColoumn"> Shop Grid 3 Coloumn </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="fourColoumn"> Shop Grid 4 Coloumn</a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List </a></li>
+                      </ul>
+                      <h6 class="mt-3" data-i18n="noSidebar">shop no sidebar</h6>
+                      <ul >
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List </a></li>
+                      </ul>
+                      
+                    </div>
+                    <div class="half2">
+
+                    <h6 class="text-uppercase" data-i18n="noSidebar"> shop no sidebar </h6>
+
+                      <ul >
+                        <li><a class="text-decoration-none" href="#" data-i18n="boxed"> Shop Boxed No Sidebar </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="boxed"> Shop Boxed No Sidebar </a></li>
+                      </ul>
+                      <h6 class="mt-3"> Shop Pages </h6>
+                      <ul class="hide-small">
+                        <li><a class="text-decoration-none" href="#" data-i18n="cart"> Cart </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="checkout"> Checkout </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="wishList"> WishList </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="myAccount"> My Account </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="lookbook"> Lookbook </a></li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <div class="mega-menu-right">
+
+                    <div class="half3 ">
+                      <img src="images/banner-1 (1).jpg" class="img-fluid" alt="">
+                      <div></div>
+                    </div>
+                    <div class="half4 position-absolute">
+                      <h4 data-i18n="last">Last <br>
+                        <span data-i18n="chance">Chance</span>
+                      </h4>
+                      <h2 data-i18n="sale">Sale</h2>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#"> <span data-i18n="blog">Blog</span> <i class="fa-solid fa-angle-down  drop-icon"></i> </a>
+                <div class=" mega-menu ">
+                  <div class="mega-menu-left w-75 py-2 px-4 d-flex justify-content-between align-items-center">
+                    <div class="half1">
+
+                      <h6 class="text-uppercase" data-i18n="withSidebar" > shop with sidebar </h6>
+                      <ul>
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List</a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="twoColoumn"> Shop Grid 2 Coloumn </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="threeColoumn"> Shop Grid 3 Coloumn </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="fourColoumn"> Shop Grid 4 Coloumn</a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List </a></li>
+                      </ul>
+                      <h6 class="mt-3" data-i18n="noSidebar">shop no sidebar</h6>
+                      <ul >
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List </a></li>
+                      </ul>
+                      
+                    </div>
+                    <div class="half2">
+
+                    <h6 class="text-uppercase" data-i18n="noSidebar"> shop no sidebar </h6>
+
+                      <ul >
+                        <li><a class="text-decoration-none" href="#" data-i18n="boxed"> Shop Boxed No Sidebar </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="boxed"> Shop Boxed No Sidebar </a></li>
+                      </ul>
+                      <h6 class="mt-3"> Shop Pages </h6>
+                      <ul class="hide-small">
+                        <li><a class="text-decoration-none" href="#" data-i18n="cart"> Cart </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="checkout"> Checkout </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="wishList"> WishList </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="myAccount"> My Account </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="lookbook"> Lookbook </a></li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <div class="mega-menu-right">
+
+                    <div class="half3 ">
+                      <img src="images/banner-1 (1).jpg" class="img-fluid" alt="">
+                      <div></div>
+                    </div>
+                    <div class="half4 position-absolute">
+                      <h4 data-i18n="last">Last <br>
+                        <span data-i18n="chance">Chance</span>
+                      </h4>
+                      <h2 data-i18n="sale">Sale</h2>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#"> <span data-i18n="elements">Elements</span> <i class="fa-solid fa-angle-down  drop-icon"></i> </a>
+                <div class=" mega-menu ">
+                  <div class="mega-menu-left w-75 py-2 px-4 d-flex justify-content-between align-items-center">
+                    <div class="half1">
+
+                      <h6 class="text-uppercase" data-i18n="withSidebar" > shop with sidebar </h6>
+                      <ul>
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List</a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="twoColoumn"> Shop Grid 2 Coloumn </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="threeColoumn"> Shop Grid 3 Coloumn </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="fourColoumn"> Shop Grid 4 Coloumn</a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List </a></li>
+                      </ul>
+                      <h6 class="mt-3" data-i18n="noSidebar">shop no sidebar</h6>
+                      <ul >
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="shopList"> Shop List </a></li>
+                      </ul>
+                      
+                    </div>
+                    <div class="half2">
+
+                    <h6 class="text-uppercase" data-i18n="noSidebar"> shop no sidebar </h6>
+
+                      <ul >
+                        <li><a class="text-decoration-none" href="#" data-i18n="boxed"> Shop Boxed No Sidebar </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="boxed"> Shop Boxed No Sidebar </a></li>
+                      </ul>
+                      <h6 class="mt-3"> Shop Pages </h6>
+                      <ul class="hide-small">
+                        <li><a class="text-decoration-none" href="#" data-i18n="cart"> Cart </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="checkout"> Checkout </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="wishList"> WishList </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="myAccount"> My Account </a></li>
+                        <li><a class="text-decoration-none" href="#" data-i18n="lookbook"> Lookbook </a></li>
+                      </ul>
+
+                    </div>
+                  </div>
+                  <div class="mega-menu-right">
+
+                    <div class="half3 ">
+                      <img src="images/banner-1 (1).jpg" class="img-fluid" alt="">
+                      <div></div>
+                    </div>
+                    <div class="half4 position-absolute">
+                      <h4 data-i18n="last">Last <br>
+                        <span data-i18n="chance">Chance</span>
+                      </h4>
+                      <h2 data-i18n="sale">Sale</h2>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="social-media mt-4">
+              <ul class="list-unstyled d-flex gap-4">
+                      <li>
+                        <a href="#" class=" d-block ">
+                          <i class="fa-brands fa-facebook-f fa-lg social rounded-circle "></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class=" d-block">
+                          <i class="fa-brands fa-twitter fa-lg social rounded-circle "></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class=" d-block">
+                          <i class="fa-brands fa-instagram fa-lg social rounded-circle "></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class=" d-block">
+                          <i class="fa-brands fa-youtube fa-lg social rounded-circle "></i>
+                        </a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div class="search-cart d-flex justify-content-between align-items-center ">
+            <div class="search-content pb-2">
+              <span class=" me-4" id="search"><i class="fa-solid fa-magnifying-glass search  "></i></span>
+            </div>
+            <div class="cart pb-2 position-relative d-flex justify-content-between align-items-center">
+              <i class=" cart-icon fa-solid fa-cart-shopping "></i>
+              <div class="cart-num rounded-circle text-center ms-2 ">2</div> 
+
+              <div class="cart-content cart-position-en ">
+                <div class="details mb-4 d-flex justify-content-between align-items-center pb-3">
+                  <div class="info">
+                    <div> <span data-i18n="Beige">Beige knitted elastic</span>
+                      <br><span data-i18n="runner"> runner shoes </span>
+                      <br><span data-i18n="dollar" class="text-black-50">1×84.00$</span>
+                    </div>
+                  </div>
+                  <div class="img-content d-flex justify-content-between align-items-center ">
+                    <img src="images/product-1.jpg"  class="img-fluid" alt="">
+                    <i class="fa-solid fa-xmark remove-icon mx-3"></i>
+                  </div>
+                </div>
+                <div class="details mb-4 d-flex justify-content-between align-items-center pb-3">
+                  <div class="info">
+                    <div> <span data-i18n="Beige">Beige knitted elastic</span>
+                      <br><span data-i18n="runner"> runner shoes </span>
+                      <br><span data-i18n="dollar" class="text-black-50">1×84.00 $</span>
+                    </div>
+                  </div>
+                  <div class="img-content d-flex justify-content-between align-items-center ">
+                    <img src="images/product-2.jpg"  class="img-fluid" alt="">
+                    <i class="fa-solid fa-xmark remove-icon mx-3"></i>
+                  </div>
+                </div>
+                <div class="cart-button w-100">
+                  <div class="info d-flex justify-content-between align-items-center mb-3">
+                    <h6 data-i18n="total">Total</h6>
+                    <h6 data-i18n="dollar2">160.00$</h6>
+                  </div>
+                  <div class="cart-btn d-flex justify-content-between align-items-center">
+                    <button class=" btn1 "data-i18n="view"> View Cart </button>
+                    <button class=" btn2 "><span data-i18n="checkout">Checkout</span> <i class="fa-solid fa-arrow-right btn-icon"></i></button>
+                  </div>
+                </div>
+              </div>   
+            </div>
+          </div>
+    </div>
+  </nav>
+  </section>
+  <!-- end main nav -->
+
+</header>
+<!-- end header -->
+ 
+ <!-- start landing section -->
+  <section class="landing py-5" >
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-8 col-md-12 col-sm-12 position-relative">
+
+          <div id="carouselExampleCaptions" class="carousel slide ">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner  ">
+              <div class="carousel-item bg-info active ">
+                <img src="images/slide-1.jpg" class="d-block w-100" alt="...">
+                <div class="  carousel-caption d-none d-md-block">
+                  <h5 data-i18n="topSale" > TopSale Collection </h5>
+                  <h1 class="mb-5 fw-bolder" data-i18n="living" > Living Room <br> Furniture </h1>
+                  <a href="#" class="text-decoration-none py-2" > <span data-i18n="shop">Shop Now</span> <i class="fa-solid fa-arrow-right icon"></i> </a>
+                </div>
+              </div>
+              <div class="carousel-item bg-info active ">
+                <img src="images/slide-2.jpg" class="d-block w-100" alt="...">
+                <div class="  carousel-caption d-none d-md-block">
+                  <h5 data-i18n="topSale"> TopSale Collection</h5>
+                  <h1 class="mb-5 fw-bolder" data-i18n="living"> Living Room <br> Furniture </h1>
+                  <a href="#" class="text-decoration-none py-2 " > <span data-i18n="shop">Shop Now</span> <i class="fa-solid fa-arrow-right icon"></i> </a>
+                </div>
+              </div>
+              <div class="carousel-item bg-info active ">
+                <img src="images/slide-3.jpg" class="d-block w-100" alt="...">
+                <div class="  carousel-caption d-none d-md-block">
+                  <h5 data-i18n="topSale"> TopSale Collection</h5>
+                  <h1 class="mb-5 fw-bolder" data-i18n="living"> Living Room <br> Furniture </h1>
+                  <a href="#" class="text-decoration-none py-2 "> <span data-i18n="shop">Shop Now</span> <i class="fa-solid fa-arrow-right icon"></i> </a>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 banners">
+          <div class="box card">
+            <img src="images/banner-1.jpg" class="img-fluid" alt="">
+            <div class="info info-en">
+              <h6 class="text-white-50" data-i18n="clearence" >Clearence</h6>
+              <h5 class="mb-4" data-i18n="chairs"> Chairs & Chaises <br> Up to 40% off </h5>
+              <a class="text-decoration-none" href="#"> <span data-i18n="shop">Shop Now</span>
+                <i class="fa-solid fa-arrow-right icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="box card">
+            <img src="images/banner-2.jpg" class="img-fluid" alt="">
+            <div class="info info-en">
+              <h6 class="text-white-50" data-i18n="new"> New in </h6>
+              <h5 class="mb-4" data-i18n="best"> Best Lighting <br> Collection </h5>
+              <a class="text-decoration-none" href="#" > <span data-i18n="shop">Shop Now</span>
+                <i class="fa-solid fa-arrow-right icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!-- end landing section -->
+
+
+
+  <!-- font awesome script file -->
+  <script src="js/all.min.js"></script>
+  <!-- bootstrap js file -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
