@@ -24,7 +24,7 @@ This project is a fully static HTML/CSS/JS single-page site that allows users to
 ✅ Direction toggle (LTR ↔️ RTL)  
 ✅ Fully responsive layout  
 ✅ Carousel & image sections  
-✅ Pure HTML, CSS, and vanilla JS (no frameworks)  
+✅ Pure HTML, Sass, and vanilla JS (no frameworks)  
 ✅ Easily customizable and extendable
 
 ---
